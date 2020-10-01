@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal $</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            margin: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Terminal $</h1>
+
+    <h2>Find files bigger than a size recursively in folder</h2>
+
+    <pre>
+    $ find -x . -type f -size +200M
+    </pre>
+
+    <h2>Do batch operations using "for ...; do ...; done" (example with imagemagick)</h2>
+
+    <pre>
+    $ for file in *.png; do convert $file -rotate 90 rotated-$file; done
+    </pre>
+</body>
+
+</html>
