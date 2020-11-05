@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement('google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <h1>Calculator App</h1>
+
+    <p>
+        Vamos a hacer una función que aplique una de las operaciones básicas sobre dos números dados (sumar, restar,
+        multiplicar, dividir). La función tiene la siguiente declaración:
+
+    <pre>
+        /**
+         * Calculates the result of an operation over two given numbers.
+         *
+         * @example
+         *      calculate(1, '+', 2)
+         *      3
+         *
+         * @param {number} operand1 The first number of the operation.
+         * @param {string} operation The operation to execute (addition '+', subtraction '-', multiplication 'x', division '/').
+         * @param {number} operand2 The second number of the operation.
+         * 
+         * @returns {number} The result of the operation, once applied with the two numbers.
+         */
+        function calculate(number1, operation, number2) { 
+            // TODO implement me
+        }
+    </pre>
+    </p>
+
+    <p>
+        Y se utilizará de la siguiente manera. Cuando la llames, deberá darte el resultado coherente de acuerdo a la
+        operación que le pidas. A continuación algunos ejemplos:
+    </p>
+
+    <pre>
+        calculate(123, '+', 456)
+        579
+
+        calculate(123, '-', 456)
+        -333
+
+        calculate(1, '/', -2)
+        -0.5
+
+        calculate(10, 'x', 10)
+        100
+    </pre>
+
+    <p>
+        Para hacer esta parte del challenge sólo necesitamos la Cónsola de JavaScript en el navegador, y jugar ahí.
+        Declaramos la
+        función tantas veces como necesitemos, y la llamamos ahí mismo también.
+    </p>
+
+    <p>
+        Cuando lo tengamos listo, ponemos todo el código completo de la función en el fichero "calculate.js", y luego
+        subimos
+        este fichero en tu carpeta del drive, en la carpeta calculator-app (crea las carpetas, si no existen aún).
+    </p>
+
+    <p>
+        Algunos hints, que te pueden servir:
+
+    <ul>
+        <li>HINT <a href="https://www.youtube.com/watch?v=5VVBrfWQ2Wk">funciones y parámetros en JS</a></li>
+        <li>HINT <a href="https://www.youtube.com/watch?v=bo23w5-klD8">condicionales en JS</a></li>
+    </ul>
+
+    Si no son suficientes, buscamos más tutoriales / vídeos en google; al final todo está en Internet ;)
+    </p>
+
+    <p>
+        Una vez que tengamos la función anterior, el siguiente paso es crear una pagina web que sea una calculadora, es
+        decir, que tenga el aspecto de una calculadora.
+        Luego le pondremos el comportamiento (aprovechando el calculador que ya hemos implementado antes). Para ello,
+        dentro de la carpeta "calculator-app" crea dos ficheros nuevos: "index.html" y "style.css". En el primero monta
+        la estructura
+        HMTL de la calculadora, y en el segundo los estilos para ponerla bonita. Para ello, utilizaremos dos grandes
+        herramientas de CSS: Flexbox y Grid layout. Te recomiendo que empieces primero por ahí, por informarte sobre
+        ambas herramientas, y luego te pongas a jugar con tu propio diseño de la calculadora ,)
+    </p>
+
+    <p>Si tienes dudas sobre cómo podría ser la estructura visual de la calculadora, a continuación tienes un croquis
+        de partida ;)
+    </p>
+
+    <pre>
+        |---------------|
+        |  DISPLAY      |
+        |---------------|
+        | 7 | 8 | 9 | / |
+        |---------------|
+        | 4 | 5 | 6 | x |
+        |---------------|
+        | 1 | 2 | 3 | - |
+        |---------------|
+        | C | 0 | . | + |
+        |---------------|
+        |       =       |
+        |---------------|
+    </pre>
+
+    </p>
+    La idea es montar un calculador jugando con Grid y Flex. Hay muchos ejemplos en internet, pero en realidad lo que
+    hay que entender es cómo funciona cada uno. Grid es para posicionar elementos en forma de "matriz", y Flex para
+    posicionarlos en forma de "fila" o "columna".
+    </p>
+
+    <p>
+        Fíjate, la botonera esa una matriz de 4 x 4, algo que puedes hacer jugando con Grid, por ejemplo. Y luego,
+        arriba tienes el display, y abajo la botonera, y más abajo el botón ""="" , podrias juntar todas las piezas
+        verticalmente jugando con Flex ;)
+    </p>
+
+    <pre>
+        &lt;div class=&quot;calculator&quot;&gt;
+            &lt;div class=&quot;display&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;buttons&quot;&gt; ... &lt;/div&gt;
+            &lt;div class=&quot;equal&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    </pre>
+
+    <p>
+        HINT Empieza por montar un esqueleto en HTML de botones (para los numeros, las 4 operaciones, y el "="), y
+        luego una sección que actúe como el "display", donde además de poder introducir el valor de cada operando,
+        puedes
+        ver el resultado después de ejecutar una operación (al clicar en "="). Es decir, seguir de una forma muy básica
+        el diseño de una calculadora estándar. Para la parte de los botones te recomiendo usar Grid, y para alinear
+        verticalmente el display y los botones debajo podrías usar Flexbox, por ejemplo. No existe una única manera de
+        enfocarlo, hay miles, pero podrías probar por ese camino. Recuerda que se trata ahora de jugar sólo con HTML y
+        CSS, no con JS (luego seguiremos con él). Si necesitas ayuda, levanta la mano en el grupo!
+    </p>
+
+    <p>
+        Por último, cuando termines con todo lo anterior, el último paso es darle vida a ese calculador, es decir, hacer
+        que funcione. Para ello vamos a crear un nuevo fichero llamado "main.js", en el que pondremos el código tal que
+        cuando presiones los botones la calculadora haga lo que tiene que hacer. Para ello, tienes que mecanizar la
+        interacción del usuario en la calculadora, es decir, añadir comportamiento a cada botón. Esto lo puedes hacer de
+        la siguiente manera, por ejemplo:
+    </p>
+
+    <pre>
+        var buttons = document.querySelectorAll('button')
+
+        var button7 = buttons[0]
+
+        button7.onclick = function() {
+            ...
+        }
+
+        ...
+    </pre>
+
+    <p>HINT <a href="https://www.youtube.com/watch?v=qd2E4ShZFxU">Evento Click en un botón ¿Cómo funciona?</a></p>
+
+    <p>
+        Dentro del fichero "main.js" llamaremos a la función "calculate" que se encuentra en el fichero "calculate.js".
+        Para poder utilizar ésta última dentro del fichero "main.js" se requiere que incluyas ambos ficheros en el
+        "index.html":
+    </p>
+
+    <pre>
+        &lt;body&gt;
+            ...
+            &lt;script src=&quot;calculate.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    </pre>
+
+    <p>Recuerda que tienes mucha información en Internet con la cual puedes resolver dudas, pero también tienes a tus
+        compañeros. Busca apoyo en ellos, es la clave del trabajo en equipo ,)</p>
+</body>
+
+</html>
