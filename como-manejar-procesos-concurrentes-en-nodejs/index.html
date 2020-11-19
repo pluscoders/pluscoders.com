@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- HTML Meta Tags -->
-    <title class="notranslate">Plus Coders</title>
-    <meta name="name" content="Plus Coders">
-    <meta name="description" content="Cómo manejar procesos concurrentes en NodeJS">
+    <title class="notranslate">Cómo manejar procesos concurrentes en Node.js</title>
+
+    <meta name="name" content="Cómo manejar procesos concurrentes en Node.js">
+    <meta name="description" content="Qué sucede cuando se ejecutan dos o más procesos iguales con múltiples situaciones asíncronas que evalúan datos concurrentes? En esta sesión compartimos un ejemplo sobre cómo abordar una situación de concurrencia de procesos en Node.js">
     <meta name="image" content="https://miro.medium.com/max/1600/1*ylONk4ex9q6IK68C6USRBg.jpeg">
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Plus Coders">
-    <meta itemprop="description" content="Cómo manejar procesos concurrentes en NodeJS">
+    <meta itemprop="name" content="Cómo manejar procesos concurrentes en Node.js">
+    <meta itemprop="description" content="Qué sucede cuando se ejecutan dos o más procesos iguales con múltiples situaciones asíncronas que evalúan datos concurrentes? En esta sesión compartimos un ejemplo sobre cómo abordar una situación de concurrencia de procesos en Node.js">
     <meta itemprop="image" content="https://miro.medium.com/max/1600/1*ylONk4ex9q6IK68C6USRBg.jpeg">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Plus Coders">
-    <meta property="og:description" content="Cómo manejar procesos concurrentes en NodeJS">
+    <meta property="og:title" content="Cómo manejar procesos concurrentes en Node.js">
+    <meta property="og:description" content="Qué sucede cuando se ejecutan dos o más procesos iguales con múltiples situaciones asíncronas que evalúan datos concurrentes? En esta sesión compartimos un ejemplo sobre cómo abordar una situación de concurrencia de procesos en Node.js">
     <meta property="og:image" content="https://miro.medium.com/max/1600/1*ylONk4ex9q6IK68C6USRBg.jpeg">
-    <meta property="og:url" content="http://pluscoders.com">
+    <meta property="og:url" content="https://pluscoders.com/como-manejar-procesos-concurrentes-en-nodejs">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:title" content="Plus Coders">
-    <meta name="twitter:description" content="Cómo manejar procesos concurrentes en NodeJS">
+    <meta name="twitter:title" content="Cómo manejar procesos concurrentes en Node.js">
+    <meta name="twitter:description" content="Qué sucede cuando se ejecutan dos o más procesos iguales con múltiples situaciones asíncronas que evalúan datos concurrentes? En esta sesión compartimos un ejemplo sobre cómo abordar una situación de concurrencia de procesos en Node.js">
     <meta name="twitter:image" content="https://miro.medium.com/max/1600/1*ylONk4ex9q6IK68C6USRBg.jpeg">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -46,103 +47,55 @@
             margin: 2vw;
         }
 
-        .logo {
-            width: 20rem;
-            height: 4rem;
-            background-image: url('https://pluscoders.com/pluscoders-logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: transparent;
-            /* border: 1px solid black; */
-            text-align: center;
+        a {
+            text-decoration: none;
         }
 
-        .description {
-            font-size: x-large;
-            text-align: justify;
-        }
-
-        .contact {
-            font-size: large;
-            text-align: justify;
-        }
-
-        #google_translate_element {
-            text-align: center;
-        }
-
-        #google_translate_element div {
-            font-size: .1rem;
-        }
-
-        #google_translate_element a {
-            font-size: .1rem;
-        }
-
-        #google_translate_element select {
-            border-radius: 1rem;
-            font-size: xx-small;
-        }
-
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 1vw;
+        h1, p, iframe {
             width: 75vw;
             max-width: 640px;
         }
 
         iframe {
-            width: 75vw;
             height: calc(75vw * 360 / 640);
-            max-width: 640px;
             max-height: calc(640px * 360 / 640);
         }
 
-        a {
-            text-decoration: none;
-        }
-
-        h2::after {
-            content: ' 👇';
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            font-weight: normal;
+        p {
             text-align: justify;
         }
-    </style>
 
-    <script>
-        setTimeout(function() { document.title = 'coders' }, 3000)
-    </script>
+        .logo {
+            display: inline-block;
+            width: 5rem;
+            height: 1rem;
+            background-image: url('../logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: transparent;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+
+        nav {
+            position: fixed;
+            bottom: 3vmax;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="google_translate_element"></div>
+    <h1>Cómo manejar procesos concurrentes en Node.js</h1>
 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement('google_translate_element');
-        }
-    </script>
+    <p>Qué sucede cuando se ejecutan dos o más procesos iguales con múltiples situaciones asíncronas que evalúan datos concurrentes? En esta sesión compartimos un ejemplo sobre cómo abordar una situación de concurrencia de procesos en Node.js</p>
 
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <iframe src="https://drive.google.com/file/d/1ipxV6sHI3DIv50oqPSg7xK2QUzyuRuxY/preview" width="640"
+        height="360"></iframe>
 
-    <a href="https://pluscoders.com"><h1 class="logo" title="+ coders">+ coders</h1></a>
+    <p><a href="https://github.com/manuelbarzi/letscoder-bootcamp-202010/pull/119/files">código fuente</a></p>
 
-    <article id="como-manejar-procesos-concurrentes-en-nodejs">
-        <h1>Cómo manejar procesos concurrentes en NodeJS</h1>
-
-        <iframe src="https://drive.google.com/file/d/1ipxV6sHI3DIv50oqPSg7xK2QUzyuRuxY/preview" width="640"
-            height="360"></iframe>
-
-        <a href="https://github.com/manuelbarzi/letscoder-bootcamp-202010/pull/119/files">código fuente</a>
-    </article>
+    <nav><a class="logo" href=".." alt="+ coders" title="+ coders">+ coders</a></nav>
 </body>
 
 </html>
