@@ -8,17 +8,20 @@
     <!-- HTML Meta Tags -->
     <title class="notranslate">+ coders</title>
     <meta name="name" content="+ coders">
-    <meta name="description" content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
+    <meta name="description"
+        content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
     <meta name="image" content="https://pluscoders.com/image.jpg">
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="+ coders">
-    <meta itemprop="description" content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
+    <meta itemprop="description"
+        content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
     <meta itemprop="image" content="https://pluscoders.com/image.jpg">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="+ coders">
-    <meta property="og:description" content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
+    <meta property="og:description"
+        content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
     <meta property="og:image" content="https://pluscoders.com/image.jpg">
     <meta property="og:url" content="https://pluscoders.com">
     <meta property="og:type" content="website">
@@ -26,109 +29,21 @@
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:title" content="+ coders">
-    <meta name="twitter:description" content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
+    <meta name="twitter:description"
+        content="Una comunidad inclusiva para programadoræs y para quienes que quieran convertirse en un@">
     <meta name="twitter:image" content="https://pluscoders.com/image.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-
-        * {
-            font-family: Acme;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 2vw;
-        }
-
-        .logo {
-            width: 20rem;
-            height: 4rem;
-            background-image: url('./logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: transparent;
-            /* border: 1px solid black; */
-            text-align: center;
-        }
-
-        .description {
-            font-size: x-large;
-            text-align: justify;
-        }
-
-        .contact {
-            font-size: large;
-            text-align: justify;
-        }
-
-        #google_translate_element {
-            text-align: center;
-        }
-
-        #google_translate_element div {
-            font-size: .1rem;
-        }
-
-        #google_translate_element a {
-            font-size: .1rem;
-        }
-
-        #google_translate_element select {
-            border-radius: 1rem;
-            font-size: xx-small;
-        }
-
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 1vw;
-            width: 75vw;
-            max-width: 640px;
-        }
-
-        iframe {
-            width: 75vw;
-            height: calc(75vw * 360 / 640);
-            max-width: 640px;
-            max-height: calc(640px * 360 / 640);
-        }
-
-        h2::after {
-            content: ' 👇';
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            font-weight: normal;
-            text-align: justify;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 
     <script>
-        setTimeout(function() { document.title = 'coders' }, 3000)
+        setTimeout(function () { document.title = 'coders' }, 3000)
     </script>
 </head>
 
 <body>
-    <div id="google_translate_element"></div>
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement('google_translate_element');
-        }
-    </script>
-
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <h1 class="logo" title="+ coders">+ coders</h1>
 
     <p class="description">
@@ -143,42 +58,49 @@
 
     <!-- <p>~</p> -->
 
-    <h2>Últimas sesiones conjuntas</h2>
+    <h2 class="last-sessions">Últimas sesiones conjuntas</h2>
 
-    <article id="como-manejar-procesos-concurrentes-en-nodejs">
-        <h3>Cómo manejar procesos concurrentes en NodeJS</h3>
+    <a href="./como-manejar-procesos-concurrentes-en-nodejs">
+        <article>
+            <h3>Cómo manejar procesos concurrentes en Node.js</h3>
 
-        <iframe src="https://drive.google.com/file/d/1ipxV6sHI3DIv50oqPSg7xK2QUzyuRuxY/preview" width="640"
-            height="360"></iframe>
+            <iframe src="https://drive.google.com/file/d/1ipxV6sHI3DIv50oqPSg7xK2QUzyuRuxY/preview"></iframe>
 
-        <a href="https://github.com/manuelbarzi/letscoder-bootcamp-202010/pull/119/files">código fuente</a>
-    </article>
+            <div class="blocker"></div>
+        </article>
+    </a>
 
-    <article id="">
-        <h3>Cómo usar React severless con WordPress mediante Frontity (por <a
-                href="https://twitter.com/juanmaguitar">JuanMa Garrido</a>, Lead Developer Relations en Frontity)</h3>
+    <a href="./como-hacer-un-front-react-para-wordpress-con-frontity">
+        <article>
+            <h3>Cómo hacer un front React para WordPress con Frontity (por JuanMa Garrido, Lead Developer Relations
+                en Frontity)
+            </h3>
 
-        <iframe src="https://drive.google.com/file/d/1O280y_JVVigtDTvtVfI4yWftO0_T1kCa/preview" width="640"
-            height="360"></iframe>
-    </article>
+            <iframe src="https://drive.google.com/file/d/1O280y_JVVigtDTvtVfI4yWftO0_T1kCa/preview"></iframe>
 
-    <article>
-        <h3>Decorator Pattern (por <a href="https://github.com/martin-garcia-blanco">Martín García Blanco</a>)</h3>
+            <div class="blocker"></div>
+        </article>
+    </a>
 
-        <iframe src="https://drive.google.com/file/d/1yLjALRNPAhu_F8072Z2R7yFjVFoXv97K/preview" width="640"
-            height="360"></iframe>
+    <a href="./design-patterns">
+        <article>
+            <h3>Decorator Pattern (por Martín García Blanco)</h3>
 
-        <a href="https://github.com/martin-garcia-blanco/design-patterns">código fuente</a>
-    </article>
+            <iframe src="https://drive.google.com/file/d/1yLjALRNPAhu_F8072Z2R7yFjVFoXv97K/preview"></iframe>
 
-    <article>
-        <h3>Strategy Pattern (por <a href="https://github.com/martin-garcia-blanco">Martín García Blanco</a>)</h3>
+            <div class="blocker"></div>
+        </article>
+    </a>
 
-        <iframe src="https://drive.google.com/file/d/1I0-ybCQY9NF9LSKef2UnEdx7Rpgb_oIe/preview" width="640"
-            height="360"></iframe>
+    <a href="./design-patterns">
+        <article>
+            <h3>Strategy Pattern (por Martín García Blanco)</h3>
 
-        <a href="https://github.com/martin-garcia-blanco/design-patterns">código fuente</a>
-    </article>
+            <iframe src="https://drive.google.com/file/d/1I0-ybCQY9NF9LSKef2UnEdx7Rpgb_oIe/preview"></iframe>
+
+            <div class="blocker"></div>
+        </article>
+    </a>
 </body>
 
 </html>
