@@ -4,14 +4,53 @@
     /* border: 1px solid black; */
 }
 
+.logo {
+    width: 16rem;
+    display: inline-block;
+    top: 2rem;
+    left: 2rem;
+    padding-top: 2.1rem;
+    padding-left: .6rem;
+    font-size: 5rem;
+    line-height: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.plus-back {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.05rem solid #F9BA3F;
+    border-top: 1.05rem solid #E64742;
+    border-right: 1.05rem solid #4A8BEE;
+    border-bottom: 1.05rem solid #279B5D;
+}
+
+.plus {
+    display: inline-block;
+    position: relative;
+    top: -1.05rem;
+    left: -1.05rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+
+.coders {
+    display: inline-block;
+    position: relative;
+    top: -2rem;
+    left: 2.5rem;
+}
+
 html, body, article {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-article {
-    margin: .5rem;
 }
 
 body {
@@ -23,55 +62,60 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    /* background-color: yellow; */
+}
+
 h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h1, h2, h3, p {
     text-align: justify;
+    width: 100%;
 }
 
 h3 {
     font-size: 1.5rem;
-    font-weight: normal;
-}
-
-iframe {
-    width: 100vw;
-    height: calc(100vw * 360 / 640);
-    max-width: 640px;
-    max-height: 360px;
 }
 
 p {
-    text-align: justify;
+    font-size: 1.2rem;
 }
 
-.logo {
-    width: 15rem;
-    height: 3rem;
-    background-image: url('./logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: transparent;
-    text-align: center;
-    margin: 21.44px 0;
-}
-
-.description {
-    font-size: x-large;
-    text-align: justify;
-}
-
-.contact {
-    font-size: large;
-    text-align: justify;
-}
-
-.last-sessions::after {
-    content: ' 👇';
-}
-
-.blocker {
-    position: absolute;
-    height: 100%;
+.entry {
     width: 100%;
+    margin-bottom: 1rem;
+}
+
+article {
+    display: inline-block;
+    width: 100%;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.video__iframe, .video__blocker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video__blocker {
     z-index: 1;
 }
