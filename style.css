@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 * {
     font-family: Acme;
-    /* border: 1px solid black; */
+    /* border: 1px solid black !important; */
 }
 
 .logo {
@@ -126,7 +126,7 @@ article {
     height: 1.5rem;
     background: gold;
     padding: 0 .5rem 0 .25rem;
-    margin-right: 1rem;
+    margin: 0 1rem 0 .25rem;
 }
 
 .tag:after {
@@ -140,4 +140,45 @@ article {
     border-width: .75rem .5rem .75rem .5rem;
     transform: translate(-100%, -50%);
     border-color: transparent gold transparent transparent;
+}
+
+.filter {
+    /* max-width: 320px; */
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.search {
+    display: flex;
+    /* align-items: center; */
+    /* align-content: space-between;  */
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+}
+
+.search__input {
+    width: 320px;
+    background-color: red !important;
+}
+
+.search__input, .search__button {
+    background-color: transparent;
+    font-size: inherit;
+    height: 2rem;
+    margin: 0 .1rem 0 .1rem;
+    border: 0;
+}
+
+.search__input:focus, .search__button:focus {
+    outline: none;
+}
+
+.search__input {
+    padding: 0 .5rem;
+    width: 100%;
+}
+
+.search__button {
+    background-color: transparent;
+    cursor: pointer;
 }
