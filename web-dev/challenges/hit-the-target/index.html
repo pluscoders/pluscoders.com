@@ -3,133 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="refresh" content="0; url = /" />
 </head>
 
-<body>
+<body style="text-align: center;">
     <script>
-        document.body.style.margin = 0
-
-        var circle = document.createElement('div')
-
-        circle.style.boxSizing = 'border-box'
-        circle.style.width = '30px'
-        circle.style.height = '30px'
-        circle.style.backgroundColor = 'transparent'
-        circle.style.borderRadius = '15px'
-        circle.style.borderWidth = '5px'
-        circle.style.borderColor = 'blue'
-        circle.style.borderStyle = 'solid'
-        circle.style.position = 'absolute'
-        circle.style.top = '350px'
-        circle.style.left = '350px'
-
-        document.body.append(circle)
-
-        var dot = document.createElement('div')
-
-        dot.style.width = '10px'
-        dot.style.height = '10px'
-        dot.style.backgroundColor = 'red'
-        dot.style.borderRadius = '5px'
-        dot.style.position = 'absolute'
-        dot.style.top = '100px'
-        dot.style.left = '100px'
-        dot.speed = 80
-
-        document.body.append(dot)
-
-        Object.defineProperties(dot, {
-            x: {
-                get() {
-                    return parseInt(this.style.left, 10)
-                },
-
-                set(x) {
-                    this.style.left = `${x}px`
-                }
-            },
-
-            y: {
-                get() {
-                    return parseInt(this.style.top, 10)
-                },
-
-                set(y) {
-                    this.style.top = `${y}px`
-                }
-            }
-        })
-
-        function queue(action) {
-            !queue.actions && (queue.actions = [])
-
-            queue.actions.push(action)
-
-            !queue.running && (queue.running = true) && (function run() {
-                var action = queue.actions.shift()
-
-                if (!action) return queue.running = false
-
-                action(run)
-            })()
-        }
-
-        dot.move = function (direction, callback) {
-            if (!callback) return queue(this[direction].bind(this))
-
-            var count = 0
-
-            var interval = setInterval(function () {
-                switch (direction) {
-                    case 'right':
-                        this.x += 1
-                        break
-                    case 'down':
-                        this.y += 1
-                        break
-                    case 'left':
-                        this.x -= 1
-                        break
-                    case 'up':
-                        this.y -= 1
-                        break
-                }
-
-                if (++count === 10) {
-                    clearInterval(interval)
-
-                    callback()
-                }
-            }.bind(this), 100 - this.speed)
-        }
-
-
-
-        dot.right = function (callback) {
-            this.move('right', callback)
-        }
-
-        dot.down = function (callback) {
-            this.move('down', callback)
-        }
-
-        dot.left = function (callback) {
-            this.move('left', callback)
-        }
-
-        dot.up = function (callback) {
-            this.move('up', callback)
-        }
-
-        dot.speed = 90
-
-        // for (var i = 0; i <= 25; i++) {
-        //     dot.right()
-        //     dot.down()
-        // }
+        setTimeout(function() {
+            location.href = '/';
+        }, 1000);
     </script>
+
+    please, go to <a href="/">/</a>
 </body>
 
 </html>
