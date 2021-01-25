@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spell ...</title>
+    <title>Concat</title>
 
-    <meta name="title" content="Spell ...">
-    <meta name="description" content="Create a function that spells a text.">
+    <meta name="title" content="Concat">
+    <meta name="description" content="Create a function that concatenates texts.">
     <meta name="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta itemprop="title" content="Spell ...">
-    <meta itemprop="description" content="Create a function that spells a text.">
+    <meta itemprop="title" content="Concat">
+    <meta itemprop="description" content="Create a function that concatenates texts.">
     <meta itemprop="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta property="og:title" content="Spell ...">
-    <meta property="og:description" content="Create a function that spells a text.">
+    <meta property="og:title" content="Concat">
+    <meta property="og:description" content="Create a function that concatenates texts.">
     <meta property="og:image" content="https://pluscoders.com/logo.jpg">
     <meta property="og:url" content="https://pluscoders.com/">
     <meta property="og:type" content="website">
 
-    <meta property="twitter:title" content="Spell ...">
-    <meta property="twitter:description" content="Create a function that spells a text.">
+    <meta property="twitter:title" content="Concat">
+    <meta property="twitter:description" content="Create a function that concatenates texts.">
     <meta property="twitter:image" content="https://pluscoders.com/logo.jpg">
     <meta property="twitter:url" content="https://pluscoders.com/">
     <meta property="twitter:card" content="https://pluscoders.com/">
@@ -43,15 +43,15 @@
         <div class="coders">coders</div>
     </a>
 
-    <h1>Spell ...</h1>
+    <h1>Concat</h1>
 
-    <p>Create a function that spells a text.</p>
+    <p>Create a function that concatenates texts.</p>
 
-    <p>Implement a function named <strong>spell</strong> that receives a text (<i>string</i>) as a parameter and
-        prints each character from that text to the console.</i></p>
+    <p>Implement a function named <strong>concat</strong> that receives one or more texts (<i>string</i>) as parameters and
+        returns them concatenated in one single string.</i></p>
 
     <pre class="prettyprint">
-            function spell(text) {
+            function concat(text1 [, ...textN]) {
                 // TODO implement me
             }
         </pre>
@@ -59,27 +59,29 @@
     <p>The function should work as follows</p>
 
     <pre class="prettyprint">
-        spell("👋")
-        "👋"
+        concat("", "")
+        ""
 
-        spell("Hello World")
-        "H"
-        "e"
-        "l"
-        "l"
-        "o"
-        " "
-        "W"
-        "o"
-        "r"
-        "l"
-        "d"
+        concat("👋", "😊", "🤙")
+        "👋😊🤙"
+
+        concat("Hello", ",", " ", "World", "!")
+        "Hello, World!"
+
+        concat(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        "012345678910"
+
+        concat("no much to concat here")
+        "no much to concat here"
+
+        concat(" ", " ")
+        "  "
 
         // etc
     </pre>
 
     <p><span class="tag">javascript (js)</span> <span class="tag">function</span> <span class="tag">string</span> <span
-            class="tag">spell</span> <span class="tag">characters</span></p>
+            class="tag">concat</span></p>
 </body>
 
 </html>
