@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>Index of ...</title>
 
-    <meta name="title" content="Search">
-    <meta name="description" content="Create a function that searches a pattern in a string.">
+    <meta name="title" content="Index of ...">
+    <meta name="description" content="Create a function that returns the index of a pattern in a string.">
     <meta name="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta itemprop="title" content="Search">
-    <meta itemprop="description" content="Create a function that searches a pattern in a string.">
+    <meta itemprop="title" content="Index of ...">
+    <meta itemprop="description" content="Create a function that returns the index of a pattern in a string.">
     <meta itemprop="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta property="og:title" content="Search">
-    <meta property="og:description" content="Create a function that searches a pattern in a string.">
+    <meta property="og:title" content="Index of ...">
+    <meta property="og:description" content="Create a function that returns the index of a pattern in a string.">
     <meta property="og:image" content="https://pluscoders.com/logo.jpg">
     <meta property="og:url" content="https://pluscoders.com/">
     <meta property="og:type" content="website">
 
-    <meta property="twitter:title" content="Search">
-    <meta property="twitter:description" content="Create a function that searches a pattern in a string.">
+    <meta property="twitter:title" content="Index of ...">
+    <meta property="twitter:description" content="Create a function that returns the index of a pattern in a string.">
     <meta property="twitter:image" content="https://pluscoders.com/logo.jpg">
     <meta property="twitter:url" content="https://pluscoders.com/">
     <meta property="twitter:card" content="https://pluscoders.com/">
@@ -43,16 +43,17 @@
         <div class="coders">coders</div>
     </a>
 
-    <h1>Search</h1>
+    <h1>Index of ...</h1>
 
-    <p>Create a function that searches a pattern in a string.</p>
+    <p>Create a function that returns the index of a pattern in a string.</p>
 
-    <p>Implement a function named <strong>search</strong> that receives a text (<i>string</i>) as a first parameter, a
-        pattern (<i>string</i>) as a second parameter, and
-        returns the first index (<i>number</i>) in the text where that pattern was found (-1 otherwise).</i></p>
+    <p>Implement a function named <strong>indexOf</strong> that receives a text (string) as a first parameter, a
+        pattern (string) as a second parameter, and
+        returns the index (number) of the first ocurrence in the text where that pattern was found (-1
+        otherwise).</p>
 
     <pre class="prettyprint">
-            function search(text, pattern) {
+            function indexOf(text, pattern) {
                 // TODO implement me
             }
         </pre>
@@ -60,38 +61,38 @@
     <p>The function should work as follows</p>
 
     <pre class="prettyprint">
-        search("    ", "")
+        indexOf("    ", "")
         0
 
-        search("salute 👋 you", "👋")
+        indexOf("salute 👋 you", "👋")
         7
 
-        search("Hello, World!", "World")
+        indexOf("Hello, World!", "World")
         7
 
-        search("Hello, World!", "ello")
+        indexOf("Hello, World!", "ello")
         1
 
-        search("Hello, World!", "orld")
+        indexOf("Hello, World!", "orld")
         8
 
-        search("Hello, World!", ",")
+        indexOf("Hello, World!", ",")
         5
 
-        search("Hello, World!", "!")
+        indexOf("Hello, World!", "!")
         12
 
-        search("Hello, World!", "What?")
+        indexOf("Hello, World!", "What?")
         -1
 
-        search("Hello, World!", "Hola")
+        indexOf("Hello, World!", "Hola")
         -1
         
         // etc
     </pre>
 
     <p><span class="tag">javascript (js)</span> <span class="tag">function</span> <span class="tag">string</span> <span
-            class="tag">search</span> <span class="tag">pattern</span></p>
+            class="tag">index</span> <span class="tag">pattern</span></p>
 </body>
 
 </html>

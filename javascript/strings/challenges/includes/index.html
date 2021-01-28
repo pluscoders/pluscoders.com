@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Includes</title>
+
+    <meta name="title" content="Includes">
+    <meta name="description" content="Create a function that checks whether a text includes a pattern.">
+    <meta name="image" content="https://pluscoders.com/logo.jpg">
+
+    <meta itemprop="title" content="Includes">
+    <meta itemprop="description" content="Create a function that checks whether a text includes a pattern.">
+    <meta itemprop="image" content="https://pluscoders.com/logo.jpg">
+
+    <meta property="og:title" content="Includes">
+    <meta property="og:description" content="Create a function that checks whether a text includes a pattern.">
+    <meta property="og:image" content="https://pluscoders.com/logo.jpg">
+    <meta property="og:url" content="https://pluscoders.com/">
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:title" content="Includes">
+    <meta property="twitter:description" content="Create a function that checks whether a text includes a pattern.">
+    <meta property="twitter:image" content="https://pluscoders.com/logo.jpg">
+    <meta property="twitter:url" content="https://pluscoders.com/">
+    <meta property="twitter:card" content="https://pluscoders.com/">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&skin=sunburst&lang=css"
+        defer=""></script>
+</head>
+
+<body>
+    <a class="logo" href="/" alt="+ coders" title="+ coders">
+        <div class="plus-back">
+            <div class="plus">+</div>
+        </div>
+        <div class="coders">coders</div>
+    </a>
+
+    <h1>Includes</h1>
+
+    <p>Create a function that checks whether a text includes a pattern.</p>
+
+    <p>Implement a function named <strong>includes</strong> that receives a text (string) as a first parameter, a
+        pattern (string) as a second parameter, and
+        returns a boolean indicating whether that text contains the pattern (true) or not (false).</p>
+
+    <pre class="prettyprint">
+            function includes(text, pattern) {
+                // TODO implement me
+            }
+        </pre>
+
+    <p>The function should work as follows</p>
+
+    <pre class="prettyprint">
+        includes("", "")
+        true
+
+        includes("👋😊", "🤙")
+        false
+
+        includes("abcdefghi", "efg")
+        true
+
+        includes("Hello, World!", "lo, Wo")
+        true
+
+        includes("123", 123)
+        true
+
+        includes("123", 456)
+        false
+
+        includes("true", true)
+        true
+
+        includes("false", false)
+        true
+
+        includes(123, 123)
+        // Uncaught TypeError: 123 is not a string
+        //    at includes (...)
+        //    at ...
+
+        includes(true, true)
+        // Uncaught TypeError: true is not a string
+        //    at includes (...)
+        //    at ...
+
+        // etc
+    </pre>
+
+    <p><span class="tag">javascript (js)</span> <span class="tag">function</span> <span class="tag">string</span> <span
+            class="tag">includes</span></p>
+</body>
+
+</html>

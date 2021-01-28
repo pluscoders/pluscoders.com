@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <meta name="title" content="Search">
+    <meta name="description" content="Create a function that searches a pattern (regex) in a string and returns its index.">
+    <meta name="image" content="https://pluscoders.com/logo.jpg">
+
+    <meta itemprop="title" content="Search">
+    <meta itemprop="description" content="Create a function that searches a pattern (regex) in a string and returns its index.">
+    <meta itemprop="image" content="https://pluscoders.com/logo.jpg">
+
+    <meta property="og:title" content="Search">
+    <meta property="og:description" content="Create a function that searches a pattern (regex) in a string and returns its index.">
+    <meta property="og:image" content="https://pluscoders.com/logo.jpg">
+    <meta property="og:url" content="https://pluscoders.com/">
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:title" content="Search">
+    <meta property="twitter:description" content="Create a function that searches a pattern (regex) in a string and returns its index.">
+    <meta property="twitter:image" content="https://pluscoders.com/logo.jpg">
+    <meta property="twitter:url" content="https://pluscoders.com/">
+    <meta property="twitter:card" content="https://pluscoders.com/">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&skin=sunburst&lang=css"
+        defer=""></script>
+</head>
+
+<body>
+    <a class="logo" href="/" alt="+ coders" title="+ coders">
+        <div class="plus-back">
+            <div class="plus">+</div>
+        </div>
+        <div class="coders">coders</div>
+    </a>
+
+    <h1>Search</h1>
+
+    <p>Create a function that searches a pattern (string or regex) in a string and returns its index.</p>
+
+    <p>Implement a function named <strong>search</strong> that receives a text (string) as a first parameter, a
+        pattern (string or regex) as a second parameter, and
+        returns the index (number) of the first ocurrence in the text where that pattern was found (-1 otherwise).</p>
+
+    <pre class="prettyprint">
+            function search(text, pattern) {
+                // TODO implement me
+            }
+        </pre>
+
+    <p>The function should work as follows</p>
+
+    <pre class="prettyprint">
+        search("    ", "")
+        0
+
+        search("salute 👋 you", "👋")
+        7
+
+        search("Hello, World!", "World")
+        7
+
+        search("Hello, World!", "ello")
+        1
+
+        search("Hello, World!", "orld")
+        8
+
+        search("Hello, World!", "What?")
+        -1
+
+        search("Hello, World!", "Hola")
+        -1
+
+        search("123🅰️🅱️", "🅰️")
+        3
+
+        search("123🅰️🅱️", /🅰️/)
+        3
+
+        search("abcABC", /abc/)
+        0
+
+        search("abcABC", /ABC/)
+        3
+
+        search("abcABC", /ABC/i)
+        0
+
+        search(123, '1')
+        // Uncaught TypeError: 123 is not a string
+        //    at search (...)
+        //    at ...
+        
+        // etc
+    </pre>
+
+    <p><span class="tag">javascript (js)</span> <span class="tag">function</span> <span class="tag">string</span> <span
+            class="tag">search</span> <span class="tag">pattern</span> <span class="tag">regex</span></p>
+</body>
+
+</html>

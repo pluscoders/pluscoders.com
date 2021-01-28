@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repeat</title>
+    <title>Reverse</title>
 
-    <meta name="title" content="Repeat">
-    <meta name="description" content="Create a function that repeats a string a given number of times.">
+    <meta name="title" content="Reverse">
+    <meta name="description" content="Create a function that reverses a text.">
     <meta name="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta itemprop="title" content="Repeat">
-    <meta itemprop="description" content="Create a function that repeats a string a given number of times.">
+    <meta itemprop="title" content="Reverse">
+    <meta itemprop="description" content="Create a function that reverses a text.">
     <meta itemprop="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta property="og:title" content="Repeat">
-    <meta property="og:description" content="Create a function that repeats a string a given number of times.">
+    <meta property="og:title" content="Reverse">
+    <meta property="og:description" content="Create a function that reverses a text.">
     <meta property="og:image" content="https://pluscoders.com/logo.jpg">
     <meta property="og:url" content="https://pluscoders.com/">
     <meta property="og:type" content="website">
 
-    <meta property="twitter:title" content="Repeat">
-    <meta property="twitter:description" content="Create a function that repeats a string a given number of times.">
+    <meta property="twitter:title" content="Reverse">
+    <meta property="twitter:description" content="Create a function that reverses a text.">
     <meta property="twitter:image" content="https://pluscoders.com/logo.jpg">
     <meta property="twitter:url" content="https://pluscoders.com/">
     <meta property="twitter:card" content="https://pluscoders.com/">
@@ -43,15 +43,15 @@
         <div class="coders">coders</div>
     </a>
 
-    <h1>Repeat!</h1>
+    <h1>Reverse</h1>
 
-    <p>Create a function that repeats a string a given number of times.</p>
+    <p>Create a function that reverses a text.</p>
 
-    <p>Implement a function named <strong>repeat</strong> that receives a text (<i>string</i>) as a first parameter, a <i>number</i> as second parameter, and
-        returns a string with the text repeated as many times as that number specifies.</i></p>
+    <p>Implement a function named <strong>reverse</strong> that receives a text (string) as parameter and
+        returns a string with that text reversed.</p>
 
     <pre class="prettyprint">
-            function repeat(text, count) {
+            function reverse(text) {
                 // TODO implement me
             }
         </pre>
@@ -59,26 +59,28 @@
     <p>The function should work as follows</p>
 
     <pre class="prettyprint">
-        repeat("", 10)
+        reverse("")
         ""
 
-        repeat("👋", 3)
-        "👋👋👋"
+        reverse("dog")
+        "god"
 
-        repeat("Hello!", 2)
-        "Hello!Hello!"
+        reverse("Hello, World!")
+        "!dlroW ,olleH"
 
-        repeat("abc", 1)
-        "abc"
+        reverse("0123456789")
+        "987654321"
 
-        repeat("make me disappear")
-        ""
+        reverse(123456789)
+        // Uncaught TypeError: 123456789 is not a string
+        //    at reverse (...)
+        //    at ...
 
         // etc
     </pre>
 
     <p><span class="tag">javascript (js)</span> <span class="tag">function</span> <span class="tag">string</span> <span
-            class="tag">repeat</span></p>
+            class="tag">reverse</span></p>
 </body>
 
 </html>

@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String to Array</title>
+    <title>Count Words!</title>
 
-    <meta name="title" content="String to Array">
-    <meta name="description" content="Create a function that converts a string to an array.">
+    <meta name="title" content="Count Words!">
+    <meta name="description" content="Create a function that counts the words in a text.">
     <meta name="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta itemprop="title" content="String to Array">
-    <meta itemprop="description" content="Create a function that converts a string to an array.">
+    <meta itemprop="title" content="Count Words!">
+    <meta itemprop="description" content="Create a function that counts the words in a text.">
     <meta itemprop="image" content="https://pluscoders.com/logo.jpg">
 
-    <meta property="og:title" content="String to Array">
-    <meta property="og:description" content="Create a function that converts a string to an array.">
+    <meta property="og:title" content="Count Words!">
+    <meta property="og:description" content="Create a function that counts the words in a text.">
     <meta property="og:image" content="https://pluscoders.com/logo.jpg">
     <meta property="og:url" content="https://pluscoders.com/">
     <meta property="og:type" content="website">
 
-    <meta property="twitter:title" content="String to Array">
-    <meta property="twitter:description" content="Create a function that converts a string to an array.">
+    <meta property="twitter:title" content="Count Words!">
+    <meta property="twitter:description" content="Create a function that counts the words in a text.">
     <meta property="twitter:image" content="https://pluscoders.com/logo.jpg">
     <meta property="twitter:url" content="https://pluscoders.com/">
     <meta property="twitter:card" content="https://pluscoders.com/">
@@ -43,16 +43,15 @@
         <div class="coders">coders</div>
     </a>
 
-    <h1>String to Array</h1>
+    <h1>Count Words!</h1>
 
-    <p>Create a function that converts a string to an array.</p>
+    <p>Create a function that counts the words in a text.</p>
 
-    <p>Implement a function named <strong>stringToArray</strong> that receives a text (<i>string</i>) as a parameter and
-        returns an <i>array</i> with all the characters from that text (each one occupying one position of the array in the
-        same order than the original text).</i></p>
+    <p>Implement a function named <strong>countWords</strong> that receives a text (string) as a parameter and
+        returns the number of words in that text.</p>
 
     <pre class="prettyprint">
-            function stringToArray(text) {
+            function countWords(text) {
                 // TODO implement me
             }
         </pre>
@@ -60,20 +59,32 @@
     <p>The function should work as follows</p>
 
     <pre class="prettyprint">
-        stringToArray("👋")
-        ["👋"]
+        countWords("    ")
+        0
 
-        stringToArray("Hello World")
-        ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"]
+        countWords("👋")
+        1
 
-        stringToArray("")
-        []
+        countWords("Hello World")
+        2
+
+        countWords("I was born from an 🥚")
+        6
+
+        countWords("I saw the light a few days later 🐣")
+        9
+
+        countWords("I did my first steps as a 🐥")
+        8
+
+        countWords("Then I grew up and I became a 🐓")
+        9
 
         // etc
     </pre>
 
     <p><span class="tag">javascript (js)</span> <span class="tag">function</span> <span class="tag">string</span> <span
-            class="tag">convert</span> <span class="tag">array</span></p>
+            class="tag">counter</span> <span class="tag">words</span></p>
 </body>
 
 </html>
