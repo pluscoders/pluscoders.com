@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aterrizando en Elixir</title>
+
+    <meta name="title" content="Aterrizando en Elixir">
+    <meta name="description" el procesamiento de
+        content="Gastón Rey (Full Stack Developer) nos deleitó con esta charla introductoria a Elixir. Nos dió un paseo muy detallado y claro, explicando qué es, cómo funciona, y qué ventajas - enormes - ofrece este lenguaje, engranado sobre la impresionante máquina virtual de Erlang.">
+    <meta name="image" content="https://pluscoders.com/aterrizando-en-elixir/logo.jpg">
+
+    <meta itemprop="title" content="Aterrizando en Elixir">
+    <meta itemprop="description" el procesamiento de
+        content="Gastón Rey (Full Stack Developer) nos deleitó con esta charla introductoria a Elixir. Nos dió un paseo muy detallado y claro, explicando qué es, cómo funciona, y qué ventajas - enormes - ofrece este lenguaje, engranado sobre la impresionante máquina virtual de Erlang.">
+    <meta itemprop="image" content="https://pluscoders.com/aterrizando-en-elixir/logo.jpg">
+
+    <meta property="og:title" content="Aterrizando en Elixir">
+    <meta property="og:description" el procesamiento de
+        content="Gastón Rey (Full Stack Developer) nos deleitó con esta charla introductoria a Elixir. Nos dió un paseo muy detallado y claro, explicando qué es, cómo funciona, y qué ventajas - enormes - ofrece este lenguaje, engranado sobre la impresionante máquina virtual de Erlang.">
+    <meta property="og:image" content="https://pluscoders.com/aterrizando-en-elixir/logo.jpg">
+    <meta property="og:url" content="https://pluscoders.com/aterrizando-en-elixir/">
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:title" content="Aterrizando en Elixir">
+    <meta property="twitter:description" el procesamiento de
+        content="Gastón Rey (Full Stack Developer) nos deleitó con esta charla introductoria a Elixir. Nos dió un paseo muy detallado y claro, explicando qué es, cómo funciona, y qué ventajas - enormes - ofrece este lenguaje, engranado sobre la impresionante máquina virtual de Erlang.">
+    <meta property="twitter:image" content="https://pluscoders.com/aterrizando-en-elixir/logo.jpg">
+    <meta property="twitter:url"
+        content="https://pluscoders.com/aterrizando-en-elixir/">
+    <meta property="twitter:card" content="https://pluscoders.com/aterrizando-en-elixir/logo.jpg">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <a class="logo" href="/" alt="+ coders" title="+ coders">
+        <div class="plus-back">
+            <div class="plus">+</div>
+        </div>
+        <div class="coders">coders</div>
+        <!-- <div class="coders">Unity 3D 🔫</div> -->
+    </a>
+
+    <h1>Aterrizando en Elixir</h1>
+
+    <p><a href="https://www.linkedin.com/in/gaston-leoanrdo-rey">Gastón Rey</a> (Full Stack Developer) nos deleitó con
+        esta charla introductoria a Elixir. Nos dió un paseo muy detallado y claro, explicando qué es, cómo funciona, y
+        qué ventajas - enormes - ofrece este lenguaje, engranado sobre la impresionante máquina virtual de Erlang.
+        Lamentablemente hubo un accidente con la grabación (el sonido), y se perdió
+        el contexto de la detallada explicación que nos ofreció. No obstante, para quienes
+        asistieron a la charla, en el video (al pie de página) se aprecian los momentos de live coding en los cuales
+        Gastón nos hizo una
+        breve
+        demostración de uso (baby steps), que aún se pueden rescatar.</p>
+
+    <p>En la primera parte, Gastón nos cuenta qué es Elixir y de dónde proviene. Un lenguaje de programación funcional,
+        concurrente y de uso general, que se ejecuta en la máquina virtual
+        BEAM, utilizada originalmente para implementar el lenguaje de programación Erlang. Elixir se basa en Erlang y
+        comparte las
+        mismas
+        abstracciones para crear aplicaciones distribuidas, mantenibles y tolerantes a fallos (de funcionamiento
+        ininterrumpido).
+    </p>
+
+    <p>A continuación las diapositivas compartidas en las presentación y un extracto resumen de la charla</p>
+
+    <div class="video">
+        <iframe class="video__iframe" src="./viewer-js/#../elixir_presentation.odp" width='400' height='300'
+            allowfullscreen webkitallowfullscreen></iframe>
+    </div>
+
+    <p>
+        Elixir fue
+        creado por José Valim en el año 2012 como un proyecto de investigación y desarrollo en Plataformec, la
+        consultoría de software de la que es co-fundador, especializada en Elixir, Ruby y Agile. José Valim además es
+        miembro del Ruby on Rails Core Team. Su objetivo era crear un lenguaje que permitiera una alta extensibilidad,
+        disponibilidad,
+        y productividad, en la máquina virtual BEAM mantieniendo compatibilidad con el ecosistema de Erlang.
+        Éste último fue diseñado por Joe Amstrong en 1986, mientras trabajaba en el laboratorio de computación de la
+        conocida compañía
+        de telefonía, Ericsson.
+    </p>
+
+    <p>Algunas características de Elixir que cabe destacar</p>
+
+    <ul>
+        <li>Tiene una sintáxis parecida a Ruby, lo cual le ha proporcionado facilidad de adopción por parte de los
+            programadores de la
+            comunidad. Ruby es un lenguaje conciso y muy orientado a productividad, pero falla en performance y
+            concurrencia (Elixir resuelve ambas cosas).</li>
+        <li>Es funcional, está orientado a procesos, ofreciendo toda la agilidad de cualquier otro lenguaje funcional
+            moderno.</li>
+        <li>Utiliza estructuras de datos inmutables que facilitan la concurrencia (manejo de datos entre procesos).
+        </li>
+        <li>Permite escribir código declarativo mediante pattern matching - expresar el qué y no el cómo (imperativo) -
+            de
+            una manera muy flexible.</li>
+        <li>Tiene tipado dinámico, se verifica en runtime (no en compilación), lo cual acelera el desarrollo de
+            aplicaciones.</li>
+        <li>Utiliza hilos livianos de ejecución (procesos), y aislados, que corren en todas las CPUs y se comunican - en
+            concurrencia -
+            mediante mensajes (al igual que Erlang) sin compartir memoria, evitando riesgos (lo opuesto a la mayoría de
+            lenguajes).</li>
+        <li>Permite escalar un sistema fácilmente (como lo hace Erlang), tanto horizontalmente (añadiendo más máquinas),
+            como verticalmente
+            (utilizando los recursos disponibles de una máquina de una manera muy eficiente).</li>
+        <li>Como Erlang, tiene un enfoque único y muy robusto para afrontar la tolerancia a fallos. Si bien a veces las
+            cosas fallan
+            inevitablemente en
+            producción, su sistema de supervisión permite reiniciar rápidamente los procesos y garantizar un
+            funcionamiento ininterrumpido. Esto es gracias a la plataforma Open Telecom (OTP), que es una parte de la
+            biblioteca estándar de
+            Erlang, y se usó inicialmente para lograr la tolerancia a fallos en los sistemas de telecomunicaciones de
+            Ericsson (su uso hoy en
+            día es mucho más amplio, se puede aplicar en cualquier tipo de programación concurrente).</li>
+
+        <li>Gracias a OTP, a su vez, en comparación con
+            otras soluciones convencionales, Elixir ofrece una gran base para que el desarrollador pueda
+            focalizarse y
+            dedicar tiempo a
+            implementar la lógica de negocio (en otros lenguajes se dedica mucho tiempo a armar y
+            sostener una
+            arquitectura, la cual es difícil de escalar y mantener en una gran mayoría de los casos).</li>
+    </ul>
+
+    <p>Por si fuera poco, además de todo lo anterior, Elixir provee todo un ecosistema de herramientas entre las cuales
+        se encuentra Phoenix, su framework server-side web MVC. Es tan fácil de usar como cualquiera de los
+        frameworks habituales (como Rails en Ruby y Django en Python), pero está respaldado por BEAM, lo cual le permite
+        producir aplicaciones web de una manera disruptivamente eficiente, sin comprometer la
+        velocidad del procesamiento, ni la capacidad del mantenimiento.</p>
+
+    <p>Los procesos de Elixir / Erlang son tan livianos y eficientes para resolver problemas de concurrencia y
+        escalabilidad en los servicios web, que gracias a ello Phoenix puede lograr 2 millones de conexiones WebSocket
+        en
+        una sola máquina, una capacidad que se puede multiplicar distribuyendo el tráfico en más nodos. Esto es posible
+        mediante su capa más alta de abstracción de componentes para comunicaciones en tiempo real, denominada Channels.
+    </p>
+
+    <p>En un momento de la charla contamos con la participación de <a
+            href="https://www.linkedin.com/in/francocatena">Franco Catena</a> (Ingeniero de Software, con más de 10 años
+        de
+        experiencia en Ruby / Rails), quien nos confirmó - a partir su propia experiencia en Elixir - todas las ventajas
+        ya descritas que ofrece
+        esta tecnología. Franco ha migrado completamente una plataforma de ventas y transacciones online (de la cual es
+        el CTO,
+        <a href="https://www.teiqui.com/">Teiqui</a>), inicialmente montada en
+        Ruby / Rails, a Elixir / Phoneix. No sólo nos comparte lo ágil y rápida que ha sido la transición, sino
+        también que los resultados han sido impresionantes: "el consumo de
+        recursos y el tiempo de respuesta ha mejorado en un orden de magnitud de 10 a 1, e incluso menos". Sin duda sus
+        palabras despiertan aún más admiración por esta tecnología.
+    </p>
+
+    <p>Por último, Gastón nos muestra el LiveDashboard de Phoneix, que ya viene de serie integrado en él, y
+        proporciona excelentes herramientas de depuración y monitoreo del rendimiento de procesos - en tiempo real -
+        para los desarrolladores de Phoenix. Entre otras cosas, este dashboard permite obtener información general del
+        sistema operativo y de la máquina (CPU, Memoria Disco), métricas de los procesos activos (visualizando en
+        tiempo real eventos mediante gráficos), recuperar logs de las conexiones establecidas, buscar / filtrar / y
+        visualizar / puertos y sockets abiertos en un nodo, también aplicaciones y procesos, etc ...
+    </p>
+
+    <p>Pero no todo es color de rosa en Elixir. Gastón nos concluye que aún queda mucho trabajo por delante,
+        especialmente en lo que respecta a
+        la madurez de su ecosistema y su comunidad, que aún está en proceso, y depende en gran medida del soporte de los
+        desarrolladores y adeptos a la tecnología. En contraposición, Ruby / Rails y Django / Python tienen un recorrido
+        largo, de más de 15 años de vida, que ofrece aún mucha ventaja en cuanto a proveer soluciones pre-fabricadas, ya
+        listas para ser integradas en una aplicación. Aún así, los beneficios que puede proporcionar Elixir - a corto,
+        medio, y largo plazo - apuntan con creciente certeza a superar los costos.</p>
+
+    <p>Para finalizar, entre los asistentes a la charla estaban <a
+            href="https://www.linkedin.com/in/rubenvidales/">Ruben Vidales</a> (Backend Developer) y Carlos Domínguez
+        (Full Stack Developer), quienes preguntaron respectivamente sobre la posibilidad de desarrollar en Elixir
+        utilizando un
+        contenedor como Docker (para agilizar el despliegue y configuración de dependencias sin tener que hacerlo
+        manualmente), y el soporte de Elixir en los IDEs de JetBrains (IntelliJ, Rubymine, ... para facilitar la
+        asistencia en el desarrollo). Gastón confirmó que sí, que ambas cosas estan disponibles, y por
+        tanto se puede disponer de
+        ellas en la red (<a href="https://hub.docker.com/_/elixir/">Docker Official Images for Elixir</a> / <a
+            href="https://plugins.jetbrains.com/plugin/7522-elixir">Elixir Plugin for JetBrains</a>).</p>
+
+    <div class="video">
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/22FCeYFDNqc" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <p><span class="tag">elixir</span> <span class="tag">language</span> <span class="tag">concurrency</span> <span
+            class="tag">scalability</span> <span class="tag">fault-tolerance</span></p>
+</body>
+
+</html>
