@@ -7,6 +7,11 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://pluscoders.com/aterrizando-en-elixir/</loc>
+    <lastmod>2021-01-30T15:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://pluscoders.com/baby-steps-con-unity-3d-creando-un-escenario-de-shooting/</loc>
     <lastmod>2021-01-23T15:30:00+00:00</lastmod>
     <priority>0.80</priority>
